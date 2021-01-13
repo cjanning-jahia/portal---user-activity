@@ -1,0 +1,12 @@
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<mix = 'http://www.jcp.org/jcr/mix/1.0'>
+<wemnt = 'http://www.jahia.org/jahia/wem/nt/1.0'>
+
+[wemnt:tabConfig] > jnt:content, jmix:editorialContent, jmix:siteComponent, jmix:structuredContent, mix:title
+ - jsonUrl (string)
+ - defaultTab (boolean, checkbox[Yes])
+ - tabType (string, choicelist) < 'Orders', 'Tickets', 'Status', 'Events', 'Subscriptions', 'Custom'
+
+[wemnt:userActivity] > jnt:content, jmix:structuredContent, mix:title
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
+   <modules jcr:primaryType="jnt:modules">
+      <portal---user-activity j:dependencies="default"
+                              j:modulePriority="0"
+                              j:moduleType="module"
+                              j:title="Portal - User Activity"
+                              jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                              jcr:primaryType="jnt:module">
+         <sources jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                  jcr:primaryType="jnt:moduleVersionFolder"
+                  j:staticMountPointProviderKey="module-portal---user-activity-1.0.0-SNAPSHOT">
+            <src jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                 jcr:primaryType="jnt:folder">
+               <main jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                     jcr:primaryType="jnt:folder">
+                  <resources jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                             jcr:primaryType="jnt:folder">
+                     <wemnt_userActivity jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                                         jcr:primaryType="jnt:nodeTypeFolder">
+                        <html jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                              jcr:primaryType="jnt:templateTypeFolder">
+                           <userActivity.jsp jcr:primaryType="jnt:viewFile"/>
+                        </html>
+                     </wemnt_userActivity>
+                  </resources>
+               </main>
+            </src>
+         </sources>
+         <portlets jcr:primaryType="jnt:portletFolder"/>
+         <files jcr:primaryType="jnt:folder"/>
+         <contents jcr:primaryType="jnt:contentFolder"/>
+         <templates j:rootTemplatePath="/base" jcr:primaryType="jnt:templatesFolder">
+            <files jcr:primaryType="jnt:folder"/>
+            <contents jcr:primaryType="jnt:contentFolder"/>
+         </templates>
+      </portal---user-activity>
+   </modules>
+</content>

@@ -1,0 +1,58 @@
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  animation: fadeEffect 1s;
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.dataTables_wrapper {
+  font-size:14px
+}
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+  border: 0px;
+}
+th, td {
+  white-space: nowrap;
+}
+table.dataTable.compact th {
+  border-bottom: 1px none #111111;
+}
+table.dataTable.no-footer {
+  border-bottom: 0px solid #111;
+}
