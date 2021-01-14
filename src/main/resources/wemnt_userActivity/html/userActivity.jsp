@@ -21,6 +21,11 @@
 <template:addResources type="javascript" resources="module.js"/>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<div class="module_header">
+    <div class="title_box"></div>
+    <div class="module_title">${currentNode.displayableName}</div>
+    <div class="module_divider"></div>
+</div>
 <jcr:sql var="result"
          sql="SELECT * FROM [wemnt:tabConfig] AS tabConfig WHERE ISDESCENDANTNODE(tabConfig, '${renderContext.site.path}')"/>
 <c:if test="${result.nodes != null && result.nodes.size > 0}">
@@ -63,11 +68,11 @@
                 </c:if>
             </c:if>
             <c:if test="${empty jsonUrl}">
-                <div>No JSON URL found</div>
+                <div>No data source found</div>
             </c:if>
         </div>
     </c:forEach>
 </c:if>
 <c:if test="${result.nodes != null && result.nodes.size == 0}">
-    <div class="warning-message">No activity widgets found</div>
+    <div class="warning-message">No activity tabs found</div>
 </c:if>

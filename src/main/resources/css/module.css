@@ -1,3 +1,32 @@
+.module_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.title_box {
+  border: 1px solid #666;
+  background-color: dodgerblue;
+  margin-right: 10px;
+  height: 10px;
+  width: 15px;
+}
+
+.module_title {
+  flex-grow: 0;
+  padding-right: 10px;
+  color: #666;
+  font-size: 18px;
+}
+
+.module_divider {
+  flex-grow: 1;
+  height: 3px;
+  background-color: #666;
+}
+
 /* Style the tab */
 .tab {
   overflow: hidden;
